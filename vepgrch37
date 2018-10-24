@@ -10,10 +10,14 @@ ENV \
   GENOME=GRCh37 \
   VEP_VERSION=91
 
+# Make Folder
+USER root
+RUN mkdir -p /ufrc /orange /bio /rlts /scratch/local
+USER vep
+
 # Download Genome
 RUN \
   mkdir -p $HOME/.vep \
-  mkdir -p /ufrc /orange /bio /rlts /scratch/local \
   && cd $HOME/.vep \
   && wget --quiet -O homo_sapiens_vep_${VEP_VERSION}_${GENOME}.tar.gz \
     ftp://ftp.ensembl.org/pub/release-${VEP_VERSION}/variation/VEP/homo_sapiens_vep_${VEP_VERSION}_${GENOME}.tar.gz \
