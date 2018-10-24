@@ -19,4 +19,4 @@ RUN \
   && tar xzf homo_sapiens_vep_${VEP_VERSION}_${GENOME}.tar.gz \
   && rm homo_sapiens_vep_${VEP_VERSION}_${GENOME}.tar.gz
   
-RUN mkdir /ufrc /orange /bio /rlts /scratch/local
+RUN mkdir -p /ufrc /orange /bio /rlts /scratch/local
