@@ -9,9 +9,10 @@ LABEL \
 ENV \
   GENOME=GRCh38 \
   VEP_VERSION=91
+  
 # Make Folder
 USER root
-RUN mkdir -p /ufrc /orange /bio /rlts /scratch/local \
+RUN mkdir -p /ufrc /orange /bio /rlts /scratch/local
 USER vep
 
 # Download Genome
