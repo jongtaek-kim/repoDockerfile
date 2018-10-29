@@ -1,7 +1,7 @@
 # repoDockerfile
 Modification of Sarek github repository Docker containers for use in the [UFRC HPC/HiPerGator](https://www.rc.ufl.edu/about/).
 
-These docker contatiners are available [here](https://hub.docker.com/u/jongtaek/).
+These docker containers are available [here](https://hub.docker.com/u/jongtaek/).
 
 
 
